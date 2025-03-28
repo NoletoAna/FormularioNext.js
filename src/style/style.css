@@ -1,0 +1,52 @@
+body {
+    background-color: #ecb417;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 100px;
+    width: 550px;
+}
+
+form {
+    padding: 0px 50px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #132116;
+}
+
+input {
+    width: 80%;
+    margin-top: 15px;
+    color: #132116;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#botao {
+    background-color: #ecb417;
+    border: none;
+    width: 80%;
+    cursor: pointer;
+    color: #fbfbfb;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 35px;
+    color: #ecb417;
+    font-weight: bold;
+}
+
+h2 {
+    color: #132116;
+    font-size: 25px;
+}
