@@ -48,13 +48,8 @@ export const Formulario = () => {
                 />
                 <p>{errors.confirmacaosenha?.message}</p>
                 <Botao />
-
             </form>
-            
-
         </div>
     );
-
-
 }
 export default Formulario;
