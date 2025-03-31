@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Trata-se de um Formulário que desenvolvi utilizando o framework next.js. Nele, deveria constar os seguintes requisitos:
+  - Campos necessários: Nome, E-mail, Senha, Confirmação de Senha
+  - Validação dos campos garantindo boas práticas de UX:
+      - Nome: mínimo de 3 caracteres.
+      - E-mail: deve seguir o formato correto (exemplo@dominio.com).
+      - Senha: mínimo de 6 caracteres.
+      - Confirmação de senha: deve ser igual à senha.
+  - Exibir mensagens de erro abaixo dos campos.
+  - O formulário não pode ser enviado se houver erros.
 
-## Getting Started
+  Optei pela seguinte estrutura de pastas:
+  - src:
+      - app:
+        - home:
+          - page.tsx
+      - components:
+          - botao.js
+          - formulario.tsx
+      - style:
+          - style.css
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O arquivo page.tsx contém a estrutura da página, nele está incluso a tag "formulário", que foi importada do arquivo formulario.tsx
+O arquivo botao.js contém a estrutura do botão de envio do formulário e as suas respectivas funções.
+O arquivo formulario.tsx contém a estrutura do formulário (seus inputs e a sua validação, que foi feita através da biblioteca react-hook-form).
+E o arquivo style.css contém a folha de estilo da página, em geral realiza a estilização de todos os componentes.
